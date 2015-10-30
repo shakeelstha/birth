@@ -1,0 +1,19 @@
+<div class="">
+    <p class="lead">Ancient Chinese Birth chart based on the age of the mother and month of conception.</p>
+    <p class="lead">This chart is believed to have been buried in a tomb near Beijing for almost 700 years and the original is now in the Beijing Institute of Science. By cross-referencing the month a child was conceived with the age of the mother at conception, the gender of the child may be determined. This chart has been proven to be about 93% accurate. According to this ancient data, your best chances for a boy occur when the mother conceives in July when she is 18, 20, 30, and 42. The best chances for a girl occur when the mother conceives in April when she is 21, 22, and 29. Also according to the study a boy is 54% more likely to be born.</p>
+    <table id="birth-chart" class="table table-bordered">
+        <thead>
+            <tr class="text-center"><td colspan="13" class="h4">Ancient Chinese Gender Prediction Chart</td></tr>
+        </thead>
+        <tbody>
+            <tr class="text-center">
+                <td class="h5">Age</td>
+                <td ng-repeat="month in monthsOfYear" class="h5">{{month}}</td>
+            </tr>
+            <tr ng-repeat="genderRow in ageGenderPredictorData" class="text-center">
+                <td class="h5">{{$index + minAge}}</td>
+                <td ng-repeat="gender in genderRow track by $index" class="text-center"><img src="img/{{gender}}.png"/></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

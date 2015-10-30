@@ -1,0 +1,42 @@
+.wrapper{
+    width: 55%;
+    margin: 0 auto;
+    padding-top: 200px;    
+}
+
+.result{
+    margin-top: 75px;
+}
+
+.blue{
+    color: #4f63ff;
+    font-size: 22px;
+}
+
+.pink{
+    color: #ff4fc4; 
+    font-size: 22px;
+}
+
+.green{
+    color: #5bd36b; 
+    font-size: 22px;
+}
+
+#powered {
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    display: block;
+}
+
+#powered img {
+    opacity: 0.4;
+    width: 200px;
+}
+
+.jasmine_reporter { 
+    background-color: #eeeeee; 
+    padding: 0; 
+    margin: 0; 
+}
